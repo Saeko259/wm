@@ -26,8 +26,10 @@ botones.forEach(Boton => {
 addboton.addEventListener('click',function(){
     const inputvalue = inputE.value;
     arr.push(inputvalue)
-    inputE.value='';
-})
+
+        inputE.value='';
+}
+)
 
 
 if (contador > 0) {
