@@ -10,10 +10,10 @@ body{
 }
 
 header{
-    background-color: pink;
-    padding: 2em;
+    background-color: rgb(229, 26, 60);
+    padding: 2em;   
     display: flex;
-    justify-content: center;
+    gap: 10px;
 }
 
 .click{
@@ -27,6 +27,22 @@ header{
     transition: background-color .3s;
 }
 
+.click2{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.click2:hover{
+    background-color: #fff;
+    color: #1e3c72;
+}
+
 .click:hover{
     background-color: #fff;
     color: #1e3c72;
@@ -35,8 +51,9 @@ header{
 .modal{
     position: fixed;
     top: 0;
-    right: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
     display: flex;
     background-color: #111111bd;
     bottom: 0;
@@ -46,6 +63,31 @@ header{
     --transform: translateY(-100vh);
     --transition: transform .8s;
     transition: opacity .6s .9s;
+}
+
+.modal2{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #111111bd;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    transition: opacity .6s .9s;
+}
+
+.modal2--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
 }
 
 .modal--show{
@@ -98,6 +140,23 @@ header{
 }
 
 .modal_close:hover{
+    color: #50a4f2;
+    background-color: #fff;
+}
+
+.modal_close2{
+    text-decoration: none;
+    color: #fff;
+    background-color: #50a4f2;
+    border: 1px solid;
+    padding: 1em 3em;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal_close2:hover{
     color: #50a4f2;
     background-color: #fff;
 }
