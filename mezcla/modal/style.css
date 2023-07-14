@@ -7,6 +7,7 @@
 body{
     background-color: blanchedalmond;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 header{
@@ -17,8 +18,11 @@ header{
 }
 
 .click{
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
     text-decoration: none;
-    color: #fff;
+    color: #551b5a;
     padding: 15px 60px;
     border: 1px solid;
     border-radius: 6px;
@@ -28,8 +32,10 @@ header{
 }
 
 .click2{
+    position: relative;
+    top: 10px;
     text-decoration: none;
-    color: #fff;
+    color: #551b5a;
     padding: 15px 60px;
     border: 1px solid;
     border-radius: 6px;
@@ -39,6 +45,92 @@ header{
 }
 
 .click2:hover{
+    background-color: #fff;
+    color: #1e3c72;
+}
+
+.click3{
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    color: #551b5a;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.click3:hover{
+    background-color: #fff;
+    color: #1e3c72;
+}
+
+.click4{
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    color: #551b5a;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+.click5{
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    color: #551b5a;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.click6{
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    color: #551b5a;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.click7{
+    margin-left: 10px;
+    position: relative;
+    top: 27px;
+    text-decoration: none;
+    color: #551b5a;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+
+.click6:hover{
+    background-color: #fff;
+    color: #1e3c72;
+}
+
+.click5:hover{
+    background-color: #fff;
+    color: #1e3c72;
+}
+
+.click4:hover{
     background-color: #fff;
     color: #1e3c72;
 }
@@ -82,6 +174,106 @@ header{
     transition: opacity .6s .9s;
 }
 
+.modal3{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #111111bd;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    transition: opacity .6s .9s;
+}
+
+.modal4{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #111111bd;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    transition: opacity .6s .9s;
+}
+
+.modal5{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #111111bd;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    transition: opacity .6s .9s;
+}
+
+.modal6{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #111111bd;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    transition: opacity .6s .9s;
+}
+
+.modal6--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal5--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal4--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal3--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
 .modal2--show{
     opacity: 1;
     pointer-events: unset;
@@ -100,7 +292,7 @@ header{
 
 .modal_container{
     margin: auto;
-    width: 100%;
+    width: 60%;
     max-width: 600px;
     max-width: 100%;
     background-color: #fff;
@@ -139,6 +331,57 @@ header{
     transition: background-color .3s;
 }
 
+.modal_close4{
+    text-decoration: none;
+    color: #fff;
+    background-color: #50a4f2;
+    border: 1px solid;
+    padding: 1em 3em;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal_close5{
+    text-decoration: none;
+    color: #fff;
+    background-color: #50a4f2;
+    border: 1px solid;
+    padding: 1em 3em;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal_close6{
+    text-decoration: none;
+    color: #fff;
+    background-color: #50a4f2;
+    border: 1px solid;
+    padding: 1em 3em;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal_close6:hover{
+    color: #50a4f2;
+    background-color: #fff;
+}
+
+.modal_close5:hover{
+    color: #50a4f2;
+    background-color: #fff;
+}
+
+.modal_close4:hover{
+    color: #50a4f2;
+    background-color: #fff;
+}
+
 .modal_close:hover{
     color: #50a4f2;
     background-color: #fff;
@@ -157,6 +400,23 @@ header{
 }
 
 .modal_close2:hover{
+    color: #50a4f2;
+    background-color: #fff;
+}
+
+.modal_close3{
+    text-decoration: none;
+    color: #fff;
+    background-color: #50a4f2;
+    border: 1px solid;
+    padding: 1em 3em;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal_close3:hover{
     color: #50a4f2;
     background-color: #fff;
 }
