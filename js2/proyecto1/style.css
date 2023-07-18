@@ -41,7 +41,15 @@ body {
 }
 
 .circulo{
-    color: green;
+    background-color: green;
+}
+
+.triangulo{
+    background-color: pink;
+}
+
+.cuadrado{
+    background-color: black;
 }
 
 .tamaño{
